@@ -10,7 +10,7 @@ document.getElementById("heading").style.color = "blue ";
 let queue = [];
 let message = document.createElement("p");
 message.innerHTML = "Currently no one in the list.";
-passengerList.appendChild(message);
+document.querySelector("#message").appendChild(message);
 
 message.style.fontWeight = "bold";
 message.style.color = "red";
@@ -24,7 +24,7 @@ enterBtn.addEventListener("click", () => {
     queue.push(passengerName.value);
     let listOfPeople = document.createElement("li");
     listOfPeople.innerHTML = passengerName.value;
-    passengerList.append(listOfPeople);
+    passengerList.appendChild(listOfPeople);
     passengerName.value = ""; // Empties the input field
     message.innerHTML = ""; //Clears the message when the name is entered
   } else {
@@ -55,7 +55,7 @@ checkIn.addEventListener("click", (event) => {
   //If the list is empty(in absence of names)
   if (check === null) {
     message.innerHTML = "Currently no one in the list.";
-    passengerList.appendChild(message);
+    document.querySelector("#message").appendChild(message);
   } else {
     check.textContent = passengerName.value;
     document.body.appendChild(check);
