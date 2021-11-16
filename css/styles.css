@@ -1,0 +1,27 @@
+#mainHeading {
+    background-color: yellow;
+    text-align: center;
+    margin: 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  #heading {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #inputs {
+    border: solid black 2px;
+    padding: 10px;
+    text-align-last: left;
+  }
+  #enter {
+    background-color: lightgray;
+  }
+  #vipFastTrack {
+    background-color: lightgoldenrodyellow;
+  }
+  
+  #checkIn {
+    margin: 10px 10px 10px 0px;
+    background-color: lightgray;
+  }
+  
